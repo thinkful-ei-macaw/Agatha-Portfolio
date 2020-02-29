@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+  }
+  
+body {
+    text-align: center;
+    background-color: #F5F1C4;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px auto 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px auto 100px 100px 100px 100px;
+}
+
+.contentNav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+main {
+    border-radius: 8px;
+    background-color: #E5DBFF;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 9;
+}
+  
+.aboutMe {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.projects {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.contact {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+h1 {
+    font-family: 'Alegreya';
+}
+
+h2, h3 {
+    font-family: 'Arima Madurai';
+}
+
+p, ul {
+    font-family: 'Source Sans Pro';
+}
+
+details {
+    text-decoration: none;
+}
+
+summary {
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
