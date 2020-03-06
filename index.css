@@ -6,47 +6,70 @@
   
 body {
     text-align: center;
-    background-color: #F5F1C4;
+    color: white;
 }
 
 .contentNav {
+    background-color: black;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    justify-self: stretch;
+    padding: 10px 0px 10px 0px;
 }
 
 main {
-    border-radius: 8px;
-    background-color: #E5DBFF;
+    background: #f75b6d; /* Old browsers */
+    background: -moz-linear-gradient(left, #f75b6d 0%, #a80077 18%, #ffb53f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f75b6d 0%,#a80077 18%,#ffb53f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f75b6d 0%,#a80077 18%,#ffb53f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f75b6d', endColorstr='#ffb53f',GradientType=1 );
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+header {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+section {
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 15px 5px 15px 5px;
 }
   
 .aboutMe {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 6;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
+    
 }
 
 .projects {
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.contact {
+    grid-column-start: 1;
+    grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
 }
 
-.contact {
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 7;
-    grid-row-end: 8;
-}
-
 h1 {
     font-family: 'Alegreya';
+    font-size: 80px;
+    padding: 10px 0px 10px 0px;
 }
 
 h2, h3 {
@@ -57,21 +80,16 @@ p, ul {
     font-family: 'Source Sans Pro';
 }
 
-details {
-    text-decoration: none;
-}
-
-summary {
-    cursor: pointer;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
 a {
     text-decoration: none;
-    color: black;
+}
+
+a:link, a:visited, a:active {
+    color: white;
+}
+
+a:hover {
+    color: #a80077;
 }
 
 li {
