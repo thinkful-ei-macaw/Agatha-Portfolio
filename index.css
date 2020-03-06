@@ -28,42 +28,45 @@ main {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 20% 20%;
 }
 
 header {
-    grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 1;
 }
 
 section {
-    border: solid black 2px;
-    border-radius: 10px;
     padding: 15px 5px 15px 5px;
 }
   
 .aboutMe {
-    grid-column-start: 1;
+    grid-column-start: 3;
     grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
-.projects {
+.subsection {
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+footer {
+    background-color: black;
+    grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    padding: 10px 0px 10px 0px;
 }
 
-.contact {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 5;
+.projects, .contact {
+    justify-self: stretch;
 }
 
 h1 {
@@ -74,6 +77,22 @@ h1 {
 
 h2, h3 {
     font-family: 'Arima Madurai';
+}
+
+.hleft {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.hright {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-right: 20px;
+    text-align: right;
 }
 
 p, ul {
@@ -92,8 +111,13 @@ a:hover {
     color: #a80077;
 }
 
+ul > li {
+    display: inline-block;
+}
+
 li {
     list-style-type: none;
+    padding: 0px 10px 0px 10px;
 }
 
 footer {
