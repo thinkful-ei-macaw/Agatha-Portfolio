@@ -24,7 +24,6 @@ main {
 
 section {
     padding: 15px 5px 15px 5px;
-    max-width: 25%;
 }
 
 footer {
@@ -40,6 +39,7 @@ h1 {
 
 h2, h3 {
     font-family: 'Arima Madurai';
+    padding: 10px 0px 10px 0px;
 }
 
 p, ul, footer {
@@ -67,13 +67,10 @@ li {
     padding: 0px 10px 0px 10px;
 }
 
-
-
-@media screen and (min-width: 760px){
-
+.imagestyle {
+    border: 1px solid;
+    max-width: 200px;
 }
-
-
 
 @media screen and (min-width: 1024px){
     main {
@@ -113,11 +110,18 @@ li {
     .projects {
         grid-column-start: 1;
         grid-column-end: 1;
-        grid-row-start: 4;
+        grid-row-start: 3;
         grid-row-end: 5;
     }
     
     .contact {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .skillicons {
         grid-column-start: 2;
         grid-column-end: 2;
         grid-row-start: 4;
