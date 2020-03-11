@@ -58,6 +58,10 @@ a:hover {
     color: #c7098e;
 }
 
+main a:hover {
+    color: #e7991b;
+}
+
 ul > li {
     display: inline-block;
 }
@@ -144,4 +148,8 @@ li {
         text-align: right;
     }    
 
+    .imagestyle {
+        border: 1px solid;
+        max-width: 250px;
+    }
 }
